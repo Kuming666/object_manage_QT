@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="showClassTableView">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>1</y>
+      <width>991</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustIgnored</enum>
+    </property>
+    <property name="dragDropOverwriteMode">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelClass">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>580</y>
+      <width>451</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <widget class="QMenu" name="menu_input">
+    <property name="title">
+     <string>信息输入</string>
+    </property>
+    <addaction name="actionAdd"/>
+    <addaction name="actionAddClass_member"/>
+   </widget>
+   <widget class="QMenu" name="menu_output">
+    <property name="title">
+     <string>信息输出</string>
+    </property>
+    <addaction name="actionShow_class"/>
+    <addaction name="actionShow_class_member"/>
+   </widget>
+   <widget class="QMenu" name="menu_change">
+    <property name="title">
+     <string>修改</string>
+    </property>
+    <addaction name="actionDel"/>
+    <addaction name="actionDel_member"/>
+    <addaction name="separator"/>
+    <addaction name="actionDel_all"/>
+    <addaction name="actionDel_member_all"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>创建/显示对象</string>
+    </property>
+    <addaction name="AddObInstance"/>
+    <addaction name="ShowObInstance"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_input"/>
+   <addaction name="menu_output"/>
+   <addaction name="menu_change"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="separator"/>
+   <addaction name="actionAdd"/>
+   <addaction name="actionAddClass_member"/>
+   <addaction name="separator"/>
+   <addaction name="actionShow_class"/>
+   <addaction name="actionShow_class_member"/>
+   <addaction name="separator"/>
+   <addaction name="actionFind"/>
+   <addaction name="separator"/>
+   <addaction name="actionShowClassSize"/>
+  </widget>
+  <action name="actionDel">
+   <property name="text">
+    <string>删除特定类</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>保存文件</string>
+   </property>
+  </action>
+  <action name="actionAdd">
+   <property name="text">
+    <string>增加类</string>
+   </property>
+  </action>
+  <action name="actionShow_class">
+   <property name="text">
+    <string>类表</string>
+   </property>
+  </action>
+  <action name="actionFind">
+   <property name="text">
+    <string>查找</string>
+   </property>
+  </action>
+  <action name="actionShow_class_member">
+   <property name="text">
+    <string>类成员表</string>
+   </property>
+  </action>
+  <action name="actionAddClass_member">
+   <property name="text">
+    <string>增加类成员</string>
+   </property>
+  </action>
+  <action name="actionDel_member">
+   <property name="text">
+    <string>删除特定类成员</string>
+   </property>
+  </action>
+  <action name="actionDel_all">
+   <property name="text">
+    <string>删除所有类</string>
+   </property>
+  </action>
+  <action name="actionDel_member_all">
+   <property name="text">
+    <string>删除特定类所有类成员</string>
+   </property>
+  </action>
+  <action name="actionShowClassSize">
+   <property name="text">
+    <string>显示类占用内存</string>
+   </property>
+  </action>
+  <action name="AddObInstance">
+   <property name="text">
+    <string>创建对象</string>
+   </property>
+  </action>
+  <action name="ShowObInstance">
+   <property name="text">
+    <string>显示对象</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
