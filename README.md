@@ -1,2 +1,2 @@
 # object_manage_QT
-25年8月大二上暑期课程学校作业，记录下，仅供参考（只是良，也请勿同校直接全部照抄上交）
+This is a simple class management system implemented with QT, written in the summer course school in August 2025，recorded, for reference only.
